@@ -1,0 +1,25 @@
+{
+    "properties": {
+        "name": "The Abandoned City",
+        "maxx": 200,
+        "maxy": 100,
+        "required_level": 5,
+        "ambient_day": "abandoned_city.ogg",
+        "ambient_night": "abandoned_city.ogg"
+    },
+    "tiles": [
+        { "x1": 0, "x2": 200, "y": 0, "type": "stone" }
+    ],
+    "objects": [
+        {
+            "type": "metal",
+            "x": 10, "y": 0
+        },
+        {
+            "type": "enemy_spawn_zone",
+            "x1": 0, "x2": 200, "y": 0,
+            "types": ["grunt", "swordsman"],
+            "max_enemies": 8
+        }
+    ]
+}

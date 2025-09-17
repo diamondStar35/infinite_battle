@@ -1,0 +1,39 @@
+{
+    "properties": {
+        "name": "The Whispering Forest",
+        "maxx": 140,
+        "maxy": 100,
+        "required_level": 1,
+        "ambient_day": "forest_day.ogg",
+        "ambient_night": "forest_night.ogg"
+    },
+    "tiles": [
+        { "x1": 0, "x2": 140, "y": 0, "type": "grass" },
+        { "x1": 50, "x2": 55, "y": 0, "type": "mud" },
+        { "x1": 56, "x2": 66, "y": 0, "type": "water" },
+        { "x1": 67, "x2": 71, "y": 0, "type": "mud" }
+    ],
+    "objects": [
+        {
+            "type": "source",
+            "x1": 50, "x2": 71, "y1": 0, "y2": 100,
+            "file": "stream.ogg"
+        },
+        {
+            "type": "tree_zone",
+            "x1": 0, "x2": 49, "y": 0,
+            "count": 4
+        },
+        {
+            "type": "tree_zone",
+            "x1": 72, "x2": 140, "y": 0,
+            "count": 4
+        },
+        {
+            "type": "enemy_spawn_zone",
+            "x1": 0, "x2": 140, "y": 0,
+            "types": ["grunt"],
+            "max_enemies": 5
+        }
+    ]
+}

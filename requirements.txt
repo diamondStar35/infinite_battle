@@ -1,0 +1,5 @@
+pygame
+sound_lib
+cytolk
+pyinstaller
+pycryptodomex
